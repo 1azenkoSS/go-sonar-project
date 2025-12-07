@@ -37,5 +37,6 @@ jobs:
         with:
           context: .
           push: true
-          # Замініть 'ваше_ім'я' на ваш логін Docker Hub, як у скрипті
+          
           tags: ${{ secrets.yuriilazenko }}/credit-calculator:latest
+          # restart ci
