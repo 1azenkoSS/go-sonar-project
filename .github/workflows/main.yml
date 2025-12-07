@@ -29,8 +29,8 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ secrets.yuriilazenko }}
+          password: ${{ secrets.23022005Yy }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -38,4 +38,4 @@ jobs:
           context: .
           push: true
           # Замініть 'ваше_ім'я' на ваш логін Docker Hub, як у скрипті
-          tags: ${{ secrets.DOCKER_USERNAME }}/credit-calculator:latest
+          tags: ${{ secrets.yuriilazenko }}/credit-calculator:latest
