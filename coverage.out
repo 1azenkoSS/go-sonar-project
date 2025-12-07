@@ -1,0 +1,11 @@
+mode: set
+go-sonar-project/main.go:21.84,22.45 1 1
+go-sonar-project/main.go:22.45,24.3 1 1
+go-sonar-project/main.go:26.2,36.37 7 1
+go-sonar-project/main.go:40.60,59.18 9 1
+go-sonar-project/main.go:59.18,61.3 1 0
+go-sonar-project/main.go:63.2,64.37 2 1
+go-sonar-project/main.go:67.13,69.68 2 0
+go-sonar-project/main.go:69.68,71.3 1 0
+go-sonar-project/main.go:73.2,75.55 3 0
+go-sonar-project/main.go:75.55,77.3 1 0
