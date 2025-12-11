@@ -7,7 +7,7 @@ Write-Host "1. Running Unit Tests..." -ForegroundColor Yellow
 go test -coverprofile coverage.out ./...
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "Tests Failed! Stopping pipeline." -ForegroundColor Red
+    Write-Host "Lazenko." -ForegroundColor Red
     exit 1
 }
 Write-Host "Tests Passed!" -ForegroundColor Green
