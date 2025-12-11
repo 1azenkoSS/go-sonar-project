@@ -16,7 +16,7 @@ Write-Host "Tests Passed!" -ForegroundColor Green
 Write-Host "2. Running SonarQube Analysis..." -ForegroundColor Yellow
 $SONAR_TOKEN = "sqp_66dd5187a42de41868a87ba8a6ab71a710434c70" 
 
-docker run --rm -v "${PWD}:/usr/src" --network=go-sonar-project_sonarnet -e SONAR_HOST_URL="http://sonarqube:9000" -e SONAR_TOKEN="$SONAR_TOKEN" sonarsource/sonar-scanner-cli
+docker run --rm -v "${PWD}:/usr/src" -e SONAR_HOST_URL="http://host.docker.internal:9000" -e SONAR_TOKEN="$SONAR_TOKEN" sonarsource/sonar-scanner-cli
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "SonarQube Scan Failed!" -ForegroundColor Red
@@ -61,3 +61,6 @@ docker run -d --name go-app-container -p 8080:8080 $IMAGE_NAME
 
 Write-Host "DEPLOYMENT COMPLETE!" -ForegroundColor Magenta
 Write-Host "Your app is running at: http://localhost:8080" -ForegroundColor Cyan
+
+
+#test

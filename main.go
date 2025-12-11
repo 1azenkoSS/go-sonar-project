@@ -36,6 +36,10 @@ func CalculateAnnuity(amount float64, rate float64, months int) (float64, float6
 	return monthlyPayment, totalPayment
 }
 
+
+
+
+
 // creditHandler - обробляє запити
 func creditHandler(w http.ResponseWriter, r *http.Request) {
 	
